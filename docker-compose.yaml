@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  app:
+    image: app-gstreamer:latest
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_HOST: 'mysql'
+      DATABASE_USERNAME: 'srinivas'
+      DATABASE_PASSWORD: 'srinivas625'
+      DATABASE_NAME: 'jk-blogs-service'
